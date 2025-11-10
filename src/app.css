@@ -1,0 +1,63 @@
+/* Importação da fonte Inter do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Importação da fonte Konexy */
+@font-face {
+  font-family: 'Konexy';
+  src: url('/fonts/konexy.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-gray-900 antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Componente de botão primário */
+  .btn-primary {
+    @apply bg-primary hover:bg-primary/90 text-white font-heading font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 active:scale-95;
+  }
+
+  /* Componente de botão secundário */
+  .btn-secondary {
+    @apply bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white font-heading font-semibold py-3 px-6 rounded-lg transition-all duration-300;
+  }
+
+  /* Card padrão */
+  .card {
+    @apply bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300;
+  }
+
+  /* Seção container */
+  .section {
+    @apply py-20 px-4 md:px-8 lg:px-16;
+  }
+
+  /* Container centralizado */
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+
+  /* Título de seção */
+  .section-title {
+    @apply font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4;
+  }
+
+  /* Subtítulo de seção */
+  .section-subtitle {
+    @apply text-lg md:text-xl text-gray-600 mb-8;
+  }
+}
