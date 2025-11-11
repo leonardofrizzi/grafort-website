@@ -21,7 +21,7 @@
     { label: 'Serviços', href: '#services' },
     { label: 'Sobre', href: '#about' },
     { label: 'Diferenciais', href: '#diferenciais' },
-    { label: 'Contato', href: '#contact' },
+    { label: 'Contato', href: '#contato' },
   ];
 </script>
 
