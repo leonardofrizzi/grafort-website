@@ -1,36 +1,55 @@
 <script lang="ts">
-  import { Motion } from 'svelte-motion';
+  import { fade, fly } from 'svelte/transition';
+  import { inview } from 'svelte-inview';
 
   export let title: string;
   export let subtitle: string | undefined = undefined;
   export let align: 'left' | 'center' = 'center';
 
   const alignClass = align === 'center' ? 'text-center' : 'text-left';
+
+  let titleInView = false;
+  let subtitleInView = false;
 </script>
 
 <div class="mb-12 {alignClass}">
-  <Motion
-    let:motion
-    initial={{ opacity: 0, y: -20 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    transition={{ duration: 0.6 }}
+  <div
+    use:inview
+    on:inview_change={(event) => {
+      const { inView } = event.detail;
+      if (inView) titleInView = true;
+    }}
   >
-    <div use:motion class="inline-block">
-      <h2 class="section-title mb-4">{title}</h2>
-      <div class="h-1 w-24 bg-secondary mx-auto mb-6"></div>
-    </div>
-  </Motion>
+    {#if titleInView}
+      <div class="inline-block" in:fly={{ y: -20, duration: 600 }}>
+        <h2 class="section-title mb-4">{title}</h2>
+        <div class="h-1 w-24 bg-secondary mx-auto mb-6"></div>
+      </div>
+    {:else}
+      <div class="inline-block opacity-0">
+        <h2 class="section-title mb-4">{title}</h2>
+        <div class="h-1 w-24 bg-secondary mx-auto mb-6"></div>
+      </div>
+    {/if}
+  </div>
 
   {#if subtitle}
-    <Motion
-      let:motion
-      initial={{ opacity: 0, y: -10 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.6, delay: 0.2 }}
+    <div
+      use:inview
+      on:inview_change={(event) => {
+        const { inView } = event.detail;
+        if (inView) {
+          setTimeout(() => {
+            subtitleInView = true;
+          }, 200);
+        }
+      }}
     >
-      <p class="section-subtitle" use:motion>{subtitle}</p>
-    </Motion>
+      {#if subtitleInView}
+        <p class="section-subtitle" in:fly={{ y: -10, duration: 600 }}>{subtitle}</p>
+      {:else}
+        <p class="section-subtitle opacity-0">{subtitle}</p>
+      {/if}
+    </div>
   {/if}
 </div>

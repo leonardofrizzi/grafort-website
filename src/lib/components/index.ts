@@ -5,3 +5,5 @@ export { default as Section } from './Section.svelte';
 export { default as SectionTitle } from './SectionTitle.svelte';
 export { default as Navbar } from './Navbar.svelte';
 export { default as FloatingWhatsApp } from './FloatingWhatsApp.svelte';
+export { default as Footer } from './Footer.svelte';
+export { default as CookieBanner } from './CookieBanner.svelte';

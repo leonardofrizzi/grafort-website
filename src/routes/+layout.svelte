@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import favicon from '$lib/assets/favicon.svg';
-	import { Navbar, FloatingWhatsApp } from '$lib/components';
+	import { Navbar, FloatingWhatsApp, Footer, CookieBanner } from '$lib/components';
 
 	let { children } = $props();
 </script>
@@ -13,3 +13,5 @@
 <Navbar />
 <FloatingWhatsApp />
 {@render children()}
+<Footer />
+<CookieBanner />

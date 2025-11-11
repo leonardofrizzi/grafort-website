@@ -1,19 +1,24 @@
 <script lang="ts">
-  import { Motion } from 'svelte-motion';
+  import { fly, fade } from 'svelte/transition';
+  import { onMount } from 'svelte';
+
+  let show = false;
+
+  onMount(() => {
+    setTimeout(() => {
+      show = true;
+    }, 1000);
+  });
 </script>
 
-<Motion
-  let:motion
-  initial={{ x: 100, opacity: 0 }}
-  animate={{ x: 0, opacity: 1 }}
-  transition={{ duration: 0.6, delay: 1 }}
->
+{#if show}
   <a
-    use:motion
-    href="https://wa.me/5511999999999"
+    href="https://wa.me/5512991511797"
     target="_blank"
     rel="noopener noreferrer"
-    class="fixed right-0 top-1/2 -translate-y-1/2 z-50 bg-green-500 hover:bg-green-600 text-white py-3 px-4 rounded-l-2xl shadow-2xl transition-all duration-300 hover:px-6 group flex items-center gap-3"
+    in:fly={{ x: 100, duration: 600 }}
+    class="fixed right-0 z-50 bg-green-500 hover:bg-green-600 text-white py-4 px-5 rounded-l-full shadow-2xl transition-all duration-500 ease-in-out hover:px-7 hover:shadow-green-500/50 group flex items-center gap-3"
+    style="bottom: 30px;"
   >
     <!-- Ícone do WhatsApp -->
     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -21,8 +26,8 @@
     </svg>
 
     <!-- Texto (aparece no hover) -->
-    <span class="font-sans font-semibold text-sm whitespace-nowrap opacity-0 w-0 overflow-hidden group-hover:opacity-100 group-hover:w-auto transition-all duration-300">
+    <span class="font-sans font-semibold text-sm whitespace-nowrap max-w-0 opacity-0 group-hover:max-w-xs group-hover:opacity-100 transition-all duration-500 ease-out">
       WhatsApp
     </span>
   </a>
-</Motion>
+{/if}

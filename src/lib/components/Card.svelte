@@ -1,18 +1,25 @@
 <script lang="ts">
-  import { Motion } from 'svelte-motion';
+  import { fade, fly } from 'svelte/transition';
+  import { inview } from 'svelte-inview';
 
   export let hover = true;
+
+  let isInView = false;
 </script>
 
-<Motion
-  let:motion
-  initial={{ opacity: 0, y: 20 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true }}
-  transition={{ duration: 0.5 }}
-  whileHover={hover ? { y: -8, boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.15)' } : {}}
+<div
+  class="card transition-all duration-300 {hover ? 'hover:-translate-y-2 hover:shadow-2xl' : ''}"
+  use:inview
+  on:inview_change={(event) => {
+    const { inView } = event.detail;
+    isInView = inView;
+  }}
 >
-  <div class="card" use:motion>
+  {#if isInView}
+    <div in:fly={{ y: 20, duration: 500 }}>
+      <slot />
+    </div>
+  {:else}
     <slot />
-  </div>
-</Motion>
+  {/if}
+</div>
