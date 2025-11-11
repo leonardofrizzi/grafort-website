@@ -38,16 +38,16 @@
           </h1>
           <a
             href="#services"
-            class="relative bg-secondary text-white font-sans font-semibold py-2.5 px-6 rounded-full transition-all duration-500 flex items-center gap-2 overflow-hidden group hover:shadow-2xl hover:shadow-secondary/50 hover:scale-105"
+            class="relative bg-secondary text-white font-sans font-semibold py-2.5 px-6 rounded-full transition-all duration-500 flex items-center gap-2 overflow-hidden group md:hover:shadow-2xl md:hover:shadow-secondary/50 md:hover:scale-105"
           >
             <!-- Barra azul inferior -->
-            <span class="absolute bottom-0 left-0 w-full h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
+            <span class="absolute bottom-0 left-0 w-full h-1 bg-primary transform scale-x-0 md:group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
 
             <!-- Efeito de brilho/shine -->
-            <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-700"></span>
+            <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] md:group-hover:translate-x-[200%] transition-transform duration-700"></span>
 
             <span class="relative z-10">Ver Nossos Serviços</span>
-            <svg class="relative z-10 w-5 h-5 transition-transform duration-500 group-hover:translate-y-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="relative z-10 w-5 h-5 transition-transform duration-500 md:group-hover:translate-y-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
           </a>
@@ -74,25 +74,25 @@
         {#if servicesInView[0]}
           <div
             in:fly={{ y: 50, duration: 600, delay: 100 }}
-            class="group relative bg-primary rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer h-full flex flex-col"
+            class="group relative bg-primary rounded-2xl overflow-hidden shadow-lg md:hover:shadow-2xl transition-all duration-500 cursor-pointer h-full flex flex-col"
           >
             <!-- Imagem -->
             <div class="relative h-48 overflow-hidden">
               <img
                 src="/images/1.webp"
                 alt="Manutenções Residenciais e Prediais"
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                class="w-full h-full object-cover transition-transform duration-500 md:group-hover:scale-110"
               />
               <!-- Overlay com gradiente -->
-              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-70 group-hover:opacity-50 transition-opacity duration-500"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-70 md:group-hover:opacity-50 transition-opacity duration-500"></div>
             </div>
 
             <!-- Conteúdo -->
             <div class="relative p-6 flex-1 flex flex-col">
               <!-- Fitinha laranja animada -->
-              <span class="absolute top-0 left-0 w-full h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
+              <span class="absolute top-0 left-0 w-full h-1 bg-secondary transform scale-x-0 md:group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
 
-              <h3 class="font-heading text-2xl font-bold mb-3 text-white group-hover:text-secondary transition-colors duration-300">
+              <h3 class="font-heading text-2xl font-bold mb-3 text-white md:group-hover:text-secondary transition-colors duration-300">
                 Manutenções Residenciais e Prediais
               </h3>
               <p class="text-white/80 mb-4">
@@ -114,21 +114,21 @@
         {#if servicesInView[1]}
           <div
             in:fly={{ y: 50, duration: 600, delay: 200 }}
-            class="group relative bg-primary rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer h-full flex flex-col"
+            class="group relative bg-primary rounded-2xl overflow-hidden shadow-lg md:hover:shadow-2xl transition-all duration-500 cursor-pointer h-full flex flex-col"
           >
             <div class="relative h-48 overflow-hidden">
               <img
                 src="/images/2.webp"
                 alt="Pequenos Reparos e Reformas"
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                class="w-full h-full object-cover transition-transform duration-500 md:group-hover:scale-110"
               />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-70 group-hover:opacity-50 transition-opacity duration-500"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-70 md:group-hover:opacity-50 transition-opacity duration-500"></div>
             </div>
 
             <div class="relative p-6 flex-1 flex flex-col">
-              <span class="absolute top-0 left-0 w-full h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
+              <span class="absolute top-0 left-0 w-full h-1 bg-secondary transform scale-x-0 md:group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
 
-              <h3 class="font-heading text-2xl font-bold mb-3 text-white group-hover:text-secondary transition-colors duration-300">
+              <h3 class="font-heading text-2xl font-bold mb-3 text-white md:group-hover:text-secondary transition-colors duration-300">
                 Pequenos Reparos e Reformas
               </h3>
               <p class="text-white/80 mb-4">
@@ -150,21 +150,21 @@
         {#if servicesInView[2]}
           <div
             in:fly={{ y: 50, duration: 600, delay: 300 }}
-            class="group relative bg-primary rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer h-full flex flex-col"
+            class="group relative bg-primary rounded-2xl overflow-hidden shadow-lg md:hover:shadow-2xl transition-all duration-500 cursor-pointer h-full flex flex-col"
           >
             <div class="relative h-48 overflow-hidden">
               <img
                 src="/images/3.webp"
                 alt="Construção Civil"
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                class="w-full h-full object-cover transition-transform duration-500 md:group-hover:scale-110"
               />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-70 group-hover:opacity-50 transition-opacity duration-500"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-70 md:group-hover:opacity-50 transition-opacity duration-500"></div>
             </div>
 
             <div class="relative p-6 flex-1 flex flex-col">
-              <span class="absolute top-0 left-0 w-full h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
+              <span class="absolute top-0 left-0 w-full h-1 bg-secondary transform scale-x-0 md:group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
 
-              <h3 class="font-heading text-2xl font-bold mb-3 text-white group-hover:text-secondary transition-colors duration-300">
+              <h3 class="font-heading text-2xl font-bold mb-3 text-white md:group-hover:text-secondary transition-colors duration-300">
                 Construção Civil
               </h3>
               <p class="text-white/80 mb-4">
@@ -186,21 +186,21 @@
         {#if servicesInView[3]}
           <div
             in:fly={{ y: 50, duration: 600, delay: 400 }}
-            class="group relative bg-primary rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer h-full flex flex-col"
+            class="group relative bg-primary rounded-2xl overflow-hidden shadow-lg md:hover:shadow-2xl transition-all duration-500 cursor-pointer h-full flex flex-col"
           >
             <div class="relative h-48 overflow-hidden">
               <img
                 src="/images/4.webp"
                 alt="Pintura"
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                class="w-full h-full object-cover transition-transform duration-500 md:group-hover:scale-110"
               />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-70 group-hover:opacity-50 transition-opacity duration-500"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-70 md:group-hover:opacity-50 transition-opacity duration-500"></div>
             </div>
 
             <div class="relative p-6 flex-1 flex flex-col">
-              <span class="absolute top-0 left-0 w-full h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
+              <span class="absolute top-0 left-0 w-full h-1 bg-secondary transform scale-x-0 md:group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
 
-              <h3 class="font-heading text-2xl font-bold mb-3 text-white group-hover:text-secondary transition-colors duration-300">
+              <h3 class="font-heading text-2xl font-bold mb-3 text-white md:group-hover:text-secondary transition-colors duration-300">
                 Pintura
               </h3>
               <p class="text-white/80 mb-4">
@@ -222,21 +222,21 @@
         {#if servicesInView[4]}
           <div
             in:fly={{ y: 50, duration: 600, delay: 500 }}
-            class="group relative bg-primary rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer h-full flex flex-col"
+            class="group relative bg-primary rounded-2xl overflow-hidden shadow-lg md:hover:shadow-2xl transition-all duration-500 cursor-pointer h-full flex flex-col"
           >
             <div class="relative h-48 overflow-hidden">
               <img
                 src="/images/5.webp"
                 alt="Hidráulica"
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                class="w-full h-full object-cover transition-transform duration-500 md:group-hover:scale-110"
               />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-70 group-hover:opacity-50 transition-opacity duration-500"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-70 md:group-hover:opacity-50 transition-opacity duration-500"></div>
             </div>
 
             <div class="relative p-6 flex-1 flex flex-col">
-              <span class="absolute top-0 left-0 w-full h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
+              <span class="absolute top-0 left-0 w-full h-1 bg-secondary transform scale-x-0 md:group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
 
-              <h3 class="font-heading text-2xl font-bold mb-3 text-white group-hover:text-secondary transition-colors duration-300">
+              <h3 class="font-heading text-2xl font-bold mb-3 text-white md:group-hover:text-secondary transition-colors duration-300">
                 Hidráulica
               </h3>
               <p class="text-white/80 mb-4">
@@ -258,21 +258,21 @@
         {#if servicesInView[5]}
           <div
             in:fly={{ y: 50, duration: 600, delay: 600 }}
-            class="group relative bg-primary rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer h-full flex flex-col"
+            class="group relative bg-primary rounded-2xl overflow-hidden shadow-lg md:hover:shadow-2xl transition-all duration-500 cursor-pointer h-full flex flex-col"
           >
             <div class="relative h-48 overflow-hidden">
               <img
                 src="/images/6.webp"
                 alt="Elétrica"
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                class="w-full h-full object-cover transition-transform duration-500 md:group-hover:scale-110"
               />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-70 group-hover:opacity-50 transition-opacity duration-500"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-70 md:group-hover:opacity-50 transition-opacity duration-500"></div>
             </div>
 
             <div class="relative p-6 flex-1 flex flex-col">
-              <span class="absolute top-0 left-0 w-full h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
+              <span class="absolute top-0 left-0 w-full h-1 bg-secondary transform scale-x-0 md:group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
 
-              <h3 class="font-heading text-2xl font-bold mb-3 text-white group-hover:text-secondary transition-colors duration-300">
+              <h3 class="font-heading text-2xl font-bold mb-3 text-white md:group-hover:text-secondary transition-colors duration-300">
                 Elétrica
               </h3>
               <p class="text-white/80 mb-4">
@@ -296,13 +296,13 @@
       {#if buttonInView}
         <div in:fly={{ y: 20, duration: 500, delay: 700 }}>
           <button
-            class="relative bg-secondary text-white font-sans font-semibold py-2.5 px-6 rounded-full transition-all duration-500 inline-flex items-center gap-2 overflow-hidden group hover:shadow-2xl hover:shadow-secondary/50 hover:scale-105"
+            class="relative bg-secondary text-white font-sans font-semibold py-2.5 px-6 rounded-full transition-all duration-500 inline-flex items-center gap-2 overflow-hidden group md:hover:shadow-2xl md:hover:shadow-secondary/50 md:hover:scale-105"
           >
             <!-- Barra azul inferior -->
-            <span class="absolute bottom-0 left-0 w-full h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
+            <span class="absolute bottom-0 left-0 w-full h-1 bg-primary transform scale-x-0 md:group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
 
             <!-- Efeito de brilho/shine -->
-            <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-700"></span>
+            <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] md:group-hover:translate-x-[200%] transition-transform duration-700"></span>
 
             <svg class="relative z-10 w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
               <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
@@ -358,13 +358,13 @@
               </p>
 
               <button
-                class="relative bg-secondary text-white font-sans font-semibold py-2.5 px-6 rounded-full transition-all duration-500 flex items-center gap-2 overflow-hidden group hover:shadow-2xl hover:shadow-secondary/50 hover:scale-105"
+                class="relative bg-secondary text-white font-sans font-semibold py-2.5 px-6 rounded-full transition-all duration-500 flex items-center gap-2 overflow-hidden group md:hover:shadow-2xl md:hover:shadow-secondary/50 md:hover:scale-105"
               >
                 <!-- Barra azul inferior -->
-                <span class="absolute bottom-0 left-0 w-full h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
+                <span class="absolute bottom-0 left-0 w-full h-1 bg-primary transform scale-x-0 md:group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
 
                 <!-- Efeito de brilho/shine -->
-                <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-700"></span>
+                <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] md:group-hover:translate-x-[200%] transition-transform duration-700"></span>
 
                 <svg class="relative z-10 w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
@@ -502,10 +502,10 @@
         href="https://wa.me/5512991511797"
         target="_blank"
         rel="noopener noreferrer"
-        class="group relative inline-flex items-center gap-3 bg-secondary text-white py-2.5 px-6 rounded-full font-sans font-semibold transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg hover:shadow-xl overflow-hidden"
+        class="group relative inline-flex items-center gap-3 bg-secondary text-white py-2.5 px-6 rounded-full font-sans font-semibold transition-all duration-300 md:hover:scale-105 active:scale-95 shadow-lg md:hover:shadow-xl overflow-hidden"
       >
         <!-- Efeito de brilho no hover -->
-        <span class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></span>
+        <span class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] md:group-hover:translate-x-[100%] transition-transform duration-700"></span>
 
         <!-- Ícone WhatsApp -->
         <svg class="w-5 h-5 relative z-10" fill="currentColor" viewBox="0 0 24 24">
@@ -516,7 +516,7 @@
         <span class="relative z-10">Entre em Contato</span>
 
         <!-- Barra azul no bottom -->
-        <span class="absolute bottom-0 left-0 w-full h-1 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+        <span class="absolute bottom-0 left-0 w-full h-1 bg-primary scale-x-0 md:group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
       </a>
     </div>
   </Section>
@@ -558,9 +558,9 @@
             target="_blank"
             rel="noopener noreferrer"
             in:fly={{ y: 30, duration: 600, delay: 100 }}
-            class="group bg-gradient-to-br from-secondary to-secondary/90 rounded-2xl p-8 text-center text-white shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 cursor-pointer block"
+            class="group bg-gradient-to-br from-secondary to-secondary/90 rounded-2xl p-8 text-center text-white shadow-lg md:hover:shadow-2xl transition-all duration-500 md:hover:-translate-y-2 cursor-pointer block"
           >
-            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 md:group-hover:scale-110 transition-transform duration-300">
               <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
               </svg>
@@ -584,9 +584,9 @@
           <a
             href="mailto:grafortmanutencao@gmail.com"
             in:fly={{ y: 30, duration: 600, delay: 200 }}
-            class="group bg-gradient-to-br from-secondary to-secondary/90 rounded-2xl p-8 text-center text-white shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 cursor-pointer block"
+            class="group bg-gradient-to-br from-secondary to-secondary/90 rounded-2xl p-8 text-center text-white shadow-lg md:hover:shadow-2xl transition-all duration-500 md:hover:-translate-y-2 cursor-pointer block"
           >
-            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 md:group-hover:scale-110 transition-transform duration-300">
               <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
@@ -612,9 +612,9 @@
             target="_blank"
             rel="noopener noreferrer"
             in:fly={{ y: 30, duration: 600, delay: 300 }}
-            class="group bg-gradient-to-br from-secondary to-secondary/90 rounded-2xl p-8 text-center text-white shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 cursor-pointer block"
+            class="group bg-gradient-to-br from-secondary to-secondary/90 rounded-2xl p-8 text-center text-white shadow-lg md:hover:shadow-2xl transition-all duration-500 md:hover:-translate-y-2 cursor-pointer block"
           >
-            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 md:group-hover:scale-110 transition-transform duration-300">
               <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
               </svg>
