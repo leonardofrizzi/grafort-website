@@ -93,10 +93,10 @@
               <span class="absolute top-0 left-0 w-full h-1 bg-secondary transform scale-x-0 md:group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
 
               <h3 class="font-heading text-2xl font-bold mb-3 text-white md:group-hover:text-secondary transition-colors duration-300">
-                Manutenções Residenciais e Prediais
+                Manutenções Residenciais, Prediais e Industriais
               </h3>
               <p class="text-white/80 mb-4">
-                Manutenção preventiva e corretiva para residências e prédios com equipe especializada.
+                Manutenção preventiva e corretiva para residências, prédios e indústrias com equipe especializada e equipamentos adequados para cada necessidade.
               </p>
             </div>
           </div>
@@ -346,15 +346,15 @@
               <div class="h-1 w-24 bg-secondary mb-8"></div>
 
               <p class="text-lg mb-6 text-white/90 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Com <span class="text-secondary font-bold">mais de 35 anos de experiência</span> no mercado, a Grafort consolidou-se como referência em serviços de manutenção, reformas e construção civil em São José dos Campos e região.
               </p>
 
               <p class="text-lg mb-6 text-white/90 leading-relaxed">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Nossa trajetória é marcada pelo compromisso com a excelência, profissionalismo e a satisfação total de nossos clientes. Contamos com uma equipe altamente qualificada e treinada para atender desde pequenos reparos até grandes projetos de construção.
               </p>
 
               <p class="text-lg mb-8 text-white/90 leading-relaxed">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                Trabalhamos com equipamentos modernos, materiais de primeira qualidade e seguimos rigorosos padrões de segurança. Nossa missão é transformar cada projeto em uma experiência positiva, entregando resultados que superam expectativas.
               </p>
 
               <button
