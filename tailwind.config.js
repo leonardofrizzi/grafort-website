@@ -9,7 +9,7 @@ export default {
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
-        heading: ['Konexy', 'Inter', 'system-ui', 'sans-serif'],
+        heading: ['Raleway', 'Inter', 'system-ui', 'sans-serif'],
       },
       spacing: {
         section: '5rem',
