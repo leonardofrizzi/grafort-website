@@ -13,7 +13,7 @@
 
 {#if show}
   <a
-    href="https://wa.me/5512991511797"
+    href="https://wa.me/5519971691038"
     target="_blank"
     rel="noopener noreferrer"
     in:fly={{ x: 100, duration: 600 }}

@@ -56,7 +56,7 @@
 		"image": "/images/grafort2.webp",
 		"@id": "https://grafort.com.br",
 		"url": "https://grafort.com.br",
-		"telephone": "+5512991511797",
+		"telephone": "+5519971691038",
 		"email": "grafortmanutencao@gmail.com",
 		"address": {
 			"@type": "PostalAddress",

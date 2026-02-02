@@ -296,7 +296,7 @@
       {#if buttonInView}
         <div in:fly={{ y: 20, duration: 500, delay: 700 }}>
           <a
-            href="https://wa.me/5512991511797"
+            href="https://wa.me/5519971691038"
             target="_blank"
             rel="noopener noreferrer"
             class="relative bg-secondary text-white font-sans font-semibold py-2.5 px-6 rounded-full transition-all duration-500 inline-flex items-center gap-2 overflow-hidden group md:hover:shadow-2xl md:hover:shadow-secondary/50 md:hover:scale-105"
@@ -361,7 +361,7 @@
               </p>
 
               <a
-                href="https://wa.me/5512991511797"
+                href="https://wa.me/5519971691038"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="relative bg-secondary text-white font-sans font-semibold py-2.5 px-6 rounded-full transition-all duration-500 inline-flex items-center gap-2 overflow-hidden group md:hover:shadow-2xl md:hover:shadow-secondary/50 md:hover:scale-105"
@@ -505,7 +505,7 @@
     <!-- WhatsApp Button -->
     <div class="flex justify-center mt-12">
       <a
-        href="https://wa.me/5512991511797"
+        href="https://wa.me/5519971691038"
         target="_blank"
         rel="noopener noreferrer"
         class="group relative inline-flex items-center gap-3 bg-secondary text-white py-2.5 px-6 rounded-full font-sans font-semibold transition-all duration-300 md:hover:scale-105 active:scale-95 shadow-lg md:hover:shadow-xl overflow-hidden"
@@ -560,7 +560,7 @@
       >
         {#if contactCardsInView[0]}
           <a
-            href="https://wa.me/5512991511797"
+            href="https://wa.me/5519971691038"
             target="_blank"
             rel="noopener noreferrer"
             in:fly={{ y: 30, duration: 600, delay: 100 }}

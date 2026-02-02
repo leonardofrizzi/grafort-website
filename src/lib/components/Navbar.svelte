@@ -68,7 +68,7 @@
         <!-- CTA Button Desktop -->
         <div class="hidden md:block">
           <a
-            href="https://wa.me/5512991511797"
+            href="https://wa.me/5519971691038"
             target="_blank"
             rel="noopener noreferrer"
             class="relative bg-white text-primary font-sans font-semibold py-2.5 px-6 rounded-full transition-all duration-500 flex items-center gap-2 overflow-hidden group md:hover:shadow-2xl md:hover:shadow-white/30 md:hover:scale-105"
@@ -132,7 +132,7 @@
             {/each}
             <div class="pt-2">
               <a
-                href="https://wa.me/5512991511797"
+                href="https://wa.me/5519971691038"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="relative w-full bg-white text-primary font-sans font-semibold py-2.5 px-6 rounded-full transition-all duration-500 flex items-center justify-center gap-2 overflow-hidden group"
